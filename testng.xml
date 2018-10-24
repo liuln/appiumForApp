@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="mPos Auto Test" parallel="none">
+    <parameter name="username" value="gya001"/>
+    <parameter name="password" value="1234"/>
+    <test verbose="2" preserve-order="true" name="transaction smoke tests">
+        <classes>
+            <class name="cases.TestSuite">
+                <methods>
+                    <include name="smokeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
